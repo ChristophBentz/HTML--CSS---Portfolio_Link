@@ -1,0 +1,137 @@
+/** Hier sind die Globalen Einstellungen **/
+
+@font-face {
+    font-family: Font-1;
+    src: url(/fonts/oblong-logo-font/OpenType-PS/oblong.otf);
+}
+
+@font-face {
+    font-family: Font-2;
+    src: url(/fonts/oblong-logo-font/OpenType-TT/oblong.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 100%;
+    margin: 1rem;
+    background: rgb(83,124,242);
+    background: linear-gradient(152deg, rgba(83,124,242,1) 0%, rgba(180,45,119,1) 43%, rgba(180,45,119,1) 50%, rgba(180,45,87,1) 65%, rgba(94,9,142,1) 100%); 
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    line-height: 1.5rem;
+    font-family: Font-2;
+    font-weight: normal;
+}
+
+p::before {
+    color: #000000;
+}
+
+h1, h2 {
+    font-family: Font-1;
+    letter-spacing: .4rem;
+    font-size: 5rem;
+}
+
+li {
+    text-decoration: none;
+    list-style-type: none;
+    display: inline-block;
+    margin: 1.5rem;
+    
+}
+
+/** Hier beginnt der Main-Content **/
+
+.me {
+    width: 20rem;
+    height: 20rem;
+    margin-bottom: 4rem;
+}
+
+.me-all {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.Christoph-Moser {
+    color: white;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.I-am-learning-software-development {
+    color: white;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-inner {
+    background-color: white;
+    margin: 2rem;
+    border-radius: 1.3rem;
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.7s ease;
+}
+
+.content-inner:hover {
+    background-color: rgba(255, 154, 218, 0.513);
+    color: white;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10rem;
+    width: auto;
+}
+
+/** Responsive Design **/
+
+@media only screen and (max-width: 800px) {
+    .Christoph-Moser {
+      font-size: 3.5rem;
+    }
+
+    .I-am-learning-software-development {
+        text-align: center;
+        line-height: 2.3rem;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .content-inner {
+      width: 70%;
+    }
+}

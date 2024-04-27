@@ -1,0 +1,19 @@
+.top {
+    --offset: 50px;
+      
+
+    
+    position: sticky;
+    bottom: 20px;      
+    margin-right:10px; 
+    place-self: end;
+    margin-top: calc(100vh + var(--offset));
+    text-decoration: none;
+    padding: 1.5rem;
+    border: 10rem;
+    font-family: sans-serif;
+    color: #fff;
+    background: #000;
+    border-radius: 1rem;
+    white-space: nowrap;
+  }
